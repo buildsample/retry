@@ -2,4 +2,4 @@ language: java
 jdk: 
   - openjdk7
   
-script: travis_retry 'if [ $i -eq 3 ]; then echo "done"; else pip install requirements.txt$i; fi'
+install: travis_retry 'if [ $i -eq 3 ]; then echo "done"; else pip install requirements.txt$i; fi'
