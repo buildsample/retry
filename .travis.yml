@@ -1,0 +1,5 @@
+language: java
+jdk: 
+  - openjdk7
+  
+script: travis_retry 'if [ $i -eq 2 ]; then echo "done"; else foobar$i; fi'
